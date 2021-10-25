@@ -1,0 +1,209 @@
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header--dark {
+    background-color: rgb(51, 57, 64);
+    color: rgb(236, 236, 236);
+    height: 40px;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.header__title {
+    font-size: 1.25em;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.header__search {
+    display: inline;
+    position: absolute;
+    right: 15px;
+}
+
+.search__input {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 0.375em 0.75em;
+    font-size: 1.2em;
+    transition: border .15s ease-in-out;
+    border: 1px solid #fff;
+    border-right: 0px solid #fff;
+    outline: none;
+    user-select: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.search__input:focus {
+    border-color: rgb(128, 189, 255);
+}
+
+.search__btn {
+    background-color: rgb(0, 123, 255);
+    display: inline-block;
+    border: none;
+    height: 39px;
+    vertical-align: middle;
+    margin-left: -4px;
+    width: 39px;
+    color: #fff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+aside {
+    flex: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(33, 37, 41);
+}
+
+.nav__ul {
+    list-style-type: none;
+}
+
+.nav__ul li {
+    padding: 10px 0px;
+}
+
+.nav__ul li div {
+    font-size: 0.8em;
+    color: rgb(66, 66, 66);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav__ul li a {
+    text-decoration: none;
+    color: rgb(111, 111, 116);
+}
+
+.nav__ul li a:hover {
+    color: #fff;
+}
+
+.nav__ul li a span {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav__ul li a span {
+        display: none !important;
+    }
+}
+
+.content {
+    flex: 75%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.main__breadcrumb {
+    background-color: rgb(119, 136, 153);
+    border-radius: .25em;
+    padding: 1em 1.5em;
+}
+
+.breadcrumb {
+    list-style: none;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.main__card {
+    width: 23%;
+    border-radius: .25em;
+    transition: background-color .3ms linear;
+    color: #fff;
+}
+
+.main__card:hover {
+    cursor: pointer;
+}
+
+.main__card--blue {
+    background-color: rgb(0, 123, 255);
+}
+
+.main__card--blue:hover {
+    background-color: rgb(0, 103, 255);
+}
+
+.main__card--yellow {
+    background-color: rgb(255, 193, 7);
+}
+
+.main__card--yellow:hover {
+    background-color: rgb(255, 173, 7);
+}
+
+.main__card--green {
+    background-color: rgb(40, 167, 69);
+}
+
+.main__card--green:hover {
+    background-color: rgb(30, 147, 59);
+}
+
+.main__card--red {
+    background-color: rgb(220, 53, 69);
+}
+
+.main__card--red:hover {
+    background-color: rgb(190, 43, 59);
+}
+
+.card__top {
+    padding: 25px 15px;
+    box-sizing: border-box;
+}
+
+.main__card--blue .card__top {
+    border-bottom: 1px solid blue;
+}
+
+.main__card--yellow .card__top {
+    border-bottom: 1px solid yellow;
+}
+
+.main__card--green .card__top {
+    border-bottom: 1px solid green;
+}
+
+.main__card--red .card__top {
+    border-bottom: 1px solid red;
+}
+
+.card__bottom {
+    padding: 15px 15px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px) {
+    .main__card {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+    .flex-container {
+        flex-wrap: wrap;
+    }
+}

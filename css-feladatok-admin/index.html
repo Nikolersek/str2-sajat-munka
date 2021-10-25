@@ -5,8 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    
+    <header class="header--dark">
+        <h3 class="header__title">Admin Page</h3>
+        <div class="header__search">
+            <form action="search">
+                <input class="search__input" type="text" placeholder="Search for...">
+                <button type="button" class="search__btn">
+                    <i class="fa fa-search"></i> 
+                </button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <nav class="main__nav">
+                <ul class="nav__ul">
+                    <li>
+                        <div>Core</div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-tachometer"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div>Interface</div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-windows"></i>
+                            <span>Layouts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bookmark"></i>
+                            <span>Pages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div>Addons</div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-area-chart"></i>
+                            <span>Charts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-table"></i>
+                            <span>Tables</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            <h1>Dashboard</h1>
+            <div class="main__breadcrumb">
+                <ul class="breadcrumb">
+                    <li><a href="#">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="main__cards flex-container">
+                <div class="main__card main__card--blue">
+                    <div class="card__top">
+                        Primary Card
+                    </div>
+                    <div class="card__bottom">
+                        View Details
+                    </div>
+                </div>
+                <div class="main__card main__card--yellow">
+                    <div class="card__top">
+                        Warning Card
+                    </div>
+                    <div class="card__bottom">
+                        View Details
+                    </div>
+                </div>
+                <div class="main__card main__card--green">
+                    <div class="card__top">
+                        Success Card
+                    </div>
+                    <div class="card__bottom">
+                        View Details
+                    </div>
+                </div>
+                <div class="main__card main__card--red">
+                    <div class="card__top">
+                        Danger Card
+                    </div>
+                    <div class="card__bottom">
+                        View Details
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
