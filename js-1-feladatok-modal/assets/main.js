@@ -1,3 +1,5 @@
+'use strict';
+
 let modalIsVisible = false;
 const modalWrapper = document.querySelector(".overlay");
 const toggleModal = () => {
