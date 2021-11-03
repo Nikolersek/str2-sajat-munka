@@ -1,0 +1,57 @@
+* {
+    padding: 0 0;
+    margin: 0 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.modal {
+    background-color: rgb(33, 147, 175);
+    width: 100%;
+    margin: auto auto;
+    right: 0;
+    left: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    text-align: right;
+    border: 2px solid rgb(15, 42, 68);
+    border-radius: 25px;
+}
+
+@media only screen and (min-width: 560px) {
+    .modal {
+        width: 50%;
+    }
+}
+
+.modal h1 {
+    text-align: center;
+}
+
+.modal p {
+    text-align: justify;
+}
+
+button {
+    background-color: rgb(84, 197, 173);
+    border: 2px solid  rgb(15, 42, 68);
+    border-radius: 25px;
+}
