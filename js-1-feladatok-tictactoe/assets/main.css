@@ -1,0 +1,39 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 194, 34);
+}
+
+.message {
+    font-style: normal;
+    font-weight: bold;
+    font-size: medium;
+}
+
+button {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container {
+    width: 600px;
+    margin: 20px auto auto auto;
+}
+
+.cell {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 200px;
+    font-size: 110px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(87, 86, 83);
+}
