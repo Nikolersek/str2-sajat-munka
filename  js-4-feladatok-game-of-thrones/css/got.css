@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Game of Thrones';
+    src: url('../fonts/GameofThrones.woff2') format('woff2'),
+    url('../fonts/GameofThrones.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Game of Thrones', Arial;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-image: url('../assets/site/mapblue.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding: 20px 20px;
+}
+aside {
+    width: 20%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 15px 15px;
+}
+
+.box {
+    display: inline-block;
+    width: 12.5%;
+    height: 115px;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 0.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.box:hover {
+    color: darkred;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.box.selected {
+    color: darkblue;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.box img {
+    width: 40%;
+    height: auto;
+}
+
+.box div {
+    margin-top: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.bio {
+    text-align: center;
+    color: white;
+    font-size: 0.7rem;
+}
+
+.bio img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.bio div div {
+    text-align: left;
+    position: relative;
+    font-weight: bold;
+}
+
+.bio div div img {
+    width: auto;
+    height: auto;
+    float: right;
+}
+
+.bio div div:after {
+    content: '';
+    clear: both;
+}
+
+.bio p {
+    text-align: justify;
+    font-size: 0.6rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.search {
+    margin-bottom: 15px;
+    color: white;
+}
+
+input {
+    display: inline-block;
+    width: 80%;
+    margin-right: 5%;
+    padding: 10px 15px;
+}
+
+i {
+    cursor: pointer;
+}
