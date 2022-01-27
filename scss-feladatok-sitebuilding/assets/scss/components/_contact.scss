@@ -1,0 +1,48 @@
+section.c {
+    text-align: center;
+    h2 {
+        margin-top: 0;
+        margin-bottom: 25px;
+        i {
+            color: variables.$google;
+        }
+    }
+    ul.list-social {
+        margin-bottom: 0;
+        li {
+            a {
+                font-size: 40px;
+                line-height: 80px;
+                display: block;
+                width: 80px;
+                height: 80px;
+                color: white;
+                border-radius: 100%;
+            }
+            &.social-twitter {
+                a {
+                    background-color: variables.$twitter;
+                    &:hover {
+                        background-color: darken(variables.$twitter, 5%);
+                    }
+                }
+            }
+            &.social-facebook {
+                a {
+                    background-color: variables.$facebook;
+                    &:hover {
+                        background-color: darken(variables.$facebook, 5%);
+                    }
+                }
+            }
+            &.social-google-plus {
+                a {
+                    background-color: variables.$google;
+                    &:hover {
+                        background-color: darken(variables.$google, 5%);
+                    }
+                }
+            }
+        }
+    }
+}

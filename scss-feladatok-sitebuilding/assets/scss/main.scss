@@ -1,0 +1,108 @@
+@use "variables/variables";
+@use "mixins/mixins";
+//@import "masthead.scss";
+//@import "download.scss";
+//@import "features.scss";
+//@import "cta.scss";
+//@import "contact.scss";
+//@import "footer.scss";
+//@import "bootstrap-overrides.scss";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @include mixins.body-font;
+}
+
+a {
+  color: variables.$theme-primary;
+  @include mixins.transition;
+  &:hover,
+  &:focus {
+    color: darken(variables.$theme-primary, 10%);
+  }
+}
+
+hr {
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: fade-out(variables.$gray-darker, .9);
+}
+
+hr.light {
+  border-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include mixins.heading-font;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 100px 0;
+  h2 {
+    font-size: 50px;
+  }
+}
+
+.bg-primary {
+  background: variables.$theme-primary;
+  background: -webkit-linear-gradient(variables.$theme-primary, darken(variables.$theme-primary, 5%));
+  background: linear-gradient(variables.$theme-primary, darken(variables.$theme-primary, 5%));
+}
+
+.text-primary {
+  color: variables.$theme-primary;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn-outline {
+  color: white;
+  border: 1px solid;
+  border-color: white;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: white;
+    border-color: variables.$theme-primary;
+    background-color: variables.$theme-primary;
+  }
+}
+
+.btn {
+  border-radius: 300px;
+  @include mixins.alt-font;
+}
+
+.btn-xl {
+  font-size: 11px;
+  padding: 15px 45px;
+}
+
+@import "components/navbar";
+@import "components/header";
+@import "components/download";
+@import "components/features";
+@import "components/cta";
+@import "components/contact";
+@import "components/footer";
